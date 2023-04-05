@@ -7,12 +7,14 @@ REPORT zabap_oop_3.
 
 CLASS lcl_main DEFINITION.
   PUBLIC SECTION.
-    METHODS:  constructor,
+    METHODS:
+      constructor,
       do_process IMPORTING iv_per_id   TYPE char12
                            iv_per_name TYPE char20
                            iv_per_age  TYPE numc2.
-    CLASS-METHODS:  class_constructor,
-                    inc_num.
+    CLASS-METHODS:
+      class_constructor,
+      inc_num.
 
 
     DATA:
